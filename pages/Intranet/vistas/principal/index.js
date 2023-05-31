@@ -29,8 +29,13 @@ const COLUMNS = [
 
  const Principal = () => {
   const [dataDummy, setDataDummy] = useState([]);
-  const dataUser = JSON.parse(localStorage.getItem("userLogin"));
-  console.log(dataUser)
+  let dataUser;
+
+  if (typeof window !== 'undefined') {
+    dataUser = JSON.parse(localStorage.getItem("userLogin"));
+  }
+
+  console.log(dataUser);
 
     const links = [
       { text: 'Inicio', url: '/Intranet/vistas/principal' },
