@@ -1,0 +1,101 @@
+
+.mainbody{
+    display: flex;
+    margin-left: -190px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    width: calc(215% / 3);
+}
+.navigation2{
+    
+    display: flex;
+    margin-left: 30px;
+
+}
+.colec{
+    font-size: 30px;
+    margin-left: 250px;
+    margin-top: 25px;
+}
+.funko{
+    width: 210px;
+    margin-left: 12px;
+    border-radius: 25rem;
+    margin-top:   100px;   
+}
+.text1{
+    margin-left: 90px;
+    margin-top:   20px; 
+}
+.funko22{
+    width: 210px;
+    margin-left: 12px;
+    border-radius: 25rem;
+    margin-top:   100px;   
+
+}
+.text2{
+    margin-left: 90px;
+    margin-top:   20px; 
+
+}
+.funko33{
+    width: 210px;
+    margin-left: 12px;
+    border-radius: 25rem;
+    margin-top:   100px;   
+
+
+}
+.text3{
+    margin-left: 90px;
+    margin-top:   20px; 
+}
+.funko44{
+    width: 210px;
+    margin-left: 12px;
+    border-radius: 25rem;
+    margin-top:   100px;   
+
+
+}
+.text4{
+    margin-left: 90px;
+    margin-top:   20px; 
+}
+.funko55{
+    width: 210px;
+    margin-left: 12px;
+    border-radius: 25rem;
+    margin-top:   100px;   
+
+
+}
+.text5{
+    margin-left: 90px;
+    margin-top:   20px; 
+}
+.funko66{
+    width: 210px;
+    margin-left: 12px;
+    border-radius: 25rem;
+    margin-top:   100px;   
+
+
+}
+.text6{
+    margin-left: 90px;
+    margin-top:   20px; 
+}
+
+.anima{
+    display: flex;
+}
+/* .mainanima:hover span{
+    left: 20px;
+} */
+.mainboton{
+
+    display: flex;
+}

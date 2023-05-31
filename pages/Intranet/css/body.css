@@ -1,0 +1,283 @@
+.returnpage{    
+    background-color: var(--primary-fuchonet);
+    border-radius: 50%;
+    margin: 0 1%;
+    /* left: -3% !important; */
+    padding: 5px;
+    color: white !important;
+    position: relative;
+    
+}
+
+#returnicon .MuiSvgIcon-root {
+    font-size: 2.5rem !important;
+}
+
+.card-title-notas {
+    margin: 1%;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.nav-link:hover {
+    border-radius: 0px !important;
+}
+.cont-nav{
+    border: 1px solid #fff !important;
+}
+.sub-title-tableL{
+    padding: 0 0 0 2%
+}
+.sub-title-tableR{
+    padding: 0 5% 0 0
+}
+.asist-title-table{
+    padding-left: 10% !important;
+}
+
+.sub-cursos-div{
+    padding-left: 2% !important;
+    padding-right: 5% !important;
+    align-items: center;
+}
+
+.background-sub-cursos{
+    padding-left: 2% !important;
+    font-size: 1.8ex !important;
+    font-weight: unset;
+    align-items: center;
+}
+.card-header {
+    padding: 0.35% 1.25rem !important;
+    align-items: center !important;
+}
+.tab-no-select {
+    color: var(--secondary-fuchonet) !important;
+    font-size: 1.5em !important;
+    font-family: "Poppins" !important;
+}
+.tab-no-select :hover,
+.tab-cursos :hover {
+    color: var(--secondary-fuchonet) !important;
+    font-weight: bold;
+}
+
+.tab-cursos {
+    background-color: var(--primary-fuchonet) !important;
+    color: var(--secondary-fuchonet) !important;
+    font-size: 1.5em !important;
+    font-family: "Poppins" !important;
+    border-radius: 0px !important;
+}
+
+.card-title-notas {
+    margin: 1%;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.margin-list {
+    margin: 0 0.9%;
+    width: 15%;
+}
+
+.margin-list span {
+    margin: 2% 5%;
+    font-size: 1em !important;
+    font-weight: bold;
+    font-family: "Poppins" !important;
+}
+
+.MuiSvgIcon-root {
+    font-size: 1.5rem !important;
+}
+
+div.scrollmenu {
+    overflow: hidden !important;  
+}
+
+.tap-notas-asistio {      
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+}
+
+/* BEGIN MODAL ALERTAS */
+.alertify .ajs-dialog, .ajs-header, .ajs-footer {
+    border-radius: 0px !important;
+    border: 0 !important;
+}
+.ajs-header {
+    background: #ffc107 !important;
+  }
+  .ajs-button {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border-radius: 0px !important;
+    border: 0px !important;
+  }
+  
+  .ajs-button:hover {
+    background: #464646 !important;
+    color: #ffffff !important;
+    opacity: 0.8;
+  }
+  
+  .ajs-commands {
+    position: absolute;
+    right: 4px;
+    margin: -25px 0px 0 0 !important;
+    z-index: 2;
+  }
+  
+.link-estudiante {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+.notas-asistencia {
+    flex: 0 0 50%;
+    max-width: 100%;
+}
+.margin-list-estudent{
+    text-align: center;
+    width: 25%;
+}
+.content-detail{
+    padding-right: 15px;
+} 
+.content-form-select{
+    padding-left: 15px;
+} 
+
+.perfil-name{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.fecha-menu{
+    text-transform: uppercase;
+}
+.contend-editar-perfil{
+    margin-top: -4%;
+}
+.list-detalle-apoderado{
+    grid-gap: 10px;
+}
+.list-detalle-perfil div[htmlFor="Name"] {
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+.list-detalle-perfil div {
+    font-size: 0.7rem;
+    color: var(--secondary-fuchonet);
+}
+.editar-container{
+    margin: 0 !important;
+}
+.my-react-select__menu {
+    z-index: 999 !important;
+}
+@media (max-width:425px){
+    .link-estudiante {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .margin-list-estudent{
+        text-align: center;
+        width: 25%;
+    }
+    .margin-list-estudent svg{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+    }
+    .margin-list-estudent span{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .content-detail{
+        padding-right: 0;
+    } 
+    .notas-asistencia {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.ActivoInstall {
+    visibility:visible;
+}
+  
+.OcultoInstall {
+  visibility: hidden;
+}
+  
+.Version {  
+  position: relative;
+  float: right;
+  width: 100%;
+  margin: 4% 3% 0 0;
+  color: #c1c1c1;
+  font-family: "Poppins" !important;
+  font-size: 0.5rem;
+  font-weight: 400;
+}
+
+.table thead th {
+    border-bottom:0 !important;
+}
+/* END MODAL ALERTAS */
+
+.button-cambiar-estudiante{
+    background: var(--primary-fuchonet);
+    color: var(--secondary-fuchonet);
+    border: hidden;
+    width: 70%;
+    height: 40px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 4px;
+}
+@media (max-width:1024px){
+    .button-cambiar-estudiante{
+        background: var(--primary-fuchonet);
+        color: var(--secondary-fuchonet);
+        border: hidden;
+        width: 100%;
+        height: 40px;
+        font-size: 0.9em;
+    }
+}
+@media (max-width:767.98px){
+    .button-cambiar-estudiante{
+        background: var(--primary-fuchonet);
+        color: var(--secondary-fuchonet);
+        border: hidden;
+        width: 100%;
+        height: 40px;
+        font-size: 0.9em;
+    }
+}
+@media (max-width:500px){
+    .button-cambiar-estudiante{
+        background: var(--primary-fuchonet);
+        color: var(--secondary-fuchonet);
+        border: hidden;
+        width: 100%;
+        height: 40px;
+        font-size: 0.7em;
+    }
+}
+@media (max-width:400px){
+    .button-cambiar-estudiante{
+        background: var(--primary-fuchonet);
+        color: var(--secondary-fuchonet);
+        border: hidden;
+        width: 100%;
+        height: 40px;
+        font-size: 0.6em;
+    }
+}

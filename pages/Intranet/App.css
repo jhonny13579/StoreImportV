@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "Poppins";
+    src: local("Poppins"), url(./fonts/poppins-v5-latin-regular.woff) format("woff");
+}
+
+body {
+    font-family: "Poppins" !important;
+    overflow-x: hidden;
+    line-height: 1 !important;
+    font-size: 1.8ex !important;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+:root {
+    --primary-fuchonet: #D3272C;
+    --secondary-fuchonet: #062212;
+    --secundario-color: #808284;
+    --black-fuchonet: #ffffff;
+    --bg-color-ea: #EAEAEA;
+    --virtual: #904799;
+    --presencial: #6EC4E8;
+    --text-color: #7C858C;
+    --white-color: #ffffff;
+    --footer-fuchonet: #F2F2F2;
+    --font-fuchonet: "Poppins";
+    --font-size-tittle: 19px;
+}
+
+.span-puntual{
+    font-style: normal;
+    /* font-weight: 500; */
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #0D4924;
+    font-weight: bold;
+}
+
+.span-impuntual{
+    font-style: normal;
+    /* font-weight: 500; */
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #73171A;
+    font-weight: bold;
+}
+
+/*SIDEBAR*/
+
+/*END SIDEBAR*/
+.modal-header{
+    color: #0D4924;
+}
+.modal-title{
+    font-size: 20px;
+}
+
+
+

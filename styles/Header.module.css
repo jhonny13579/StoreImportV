@@ -1,0 +1,268 @@
+.mainheader {
+    background-color: var(--primaryColor);
+}
+
+.containerheader {
+    padding: 2rem; /* para establecer el espacio de relleno entre el contenido de un elemento y su borde */
+        
+}
+
+.navigation {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.buscar input[type="search"] {
+    width: 90%;
+    padding: 2rem;
+    border: none;
+    border-top-left-radius:.5rem;
+    border-bottom-left-radius: .5rem;
+    height: 12px;
+
+
+}
+.menu{
+    display: flex; /* para poder poner en fila lo que esta dentro */
+    column-gap: 1rem;
+    padding: 0 2.5rem;
+ /*    border: .1rem solid #B48811; */
+    border-radius: .5rem;
+  /*   width: 8.5%;  */
+    margin-left: 100px;
+    font-size: .8em;
+}
+
+.menup {
+    font-weight: 500; /* para hacer que el texto de un encabezado se vea más grueso  */
+    font-size: 1.4em;
+    padding: 23%;
+    margin: 0;
+    margin-left: -12px;
+    margin-bottom: 0.22rem;
+}
+    
+.buscar{
+    margin-left: 50px;
+    width: 540px;
+    height: 43px;
+    display: flex;
+    
+}
+
+.mainbuscar {
+    grid-column: 3/6;
+    margin: 0;
+    margin-top: 0rem;
+    width: 340px;
+    height: 43px;
+    margin-left: 4rem;
+}
+
+.buscador{
+
+    width: 380px;
+    height: 43px;
+}
+.mlog{
+
+    width: 2rem;
+    height: auto;
+
+}
+.searchicon{
+
+    max-width: 4rem;
+    background-color: var(--colorSecundario);
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    font-size: 30px;
+    
+}
+.logo{
+    margin-left: 20px; /* para crear un espacio*/
+    font-size: 2em; /* para establecer tamaño */
+
+}
+.iniciar{
+    font-weight: 500; /* para hacer que el texto de un encabezado se vea más grueso  */
+    font-size: 1.4em;
+    padding: 23%;
+    margin: 0;
+    margin-left: 212px;
+    margin-bottom: 0.22rem;
+
+}
+.navmainlogin {
+    display: flex;
+    align-items: center;    
+    margin-left: 300px;
+}
+
+.navlogincarrito {
+    display: flex;
+    gap: 2rem;
+}
+.carp{
+
+    font-weight: 500; /* para hacer que el texto de un encabezado se vea más grueso  */
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+    margin-left: -15px;
+    margin-bottom: 0.22rem;
+}
+.carp2{
+
+    font-weight: 500; /* para hacer que el texto de un encabezado se vea más grueso  */
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0;
+    margin-top: 6%;
+    margin-left: -104px;
+    margin-bottom: 0rem;
+}
+.lo1 {
+    margin-left: 100px;
+}
+.flecha{
+
+    margin-left: -118px;
+    height: 10px;
+    margin-top: 12px;
+}
+.myaccount{
+
+display: flex;
+margin: 20px;
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .containerheader{
+        padding: 2rem; 
+    }
+    .navmainlogin {
+
+    }
+
+    .buscar {
+        
+        margin-left: 10px;
+        width: auto;
+        height: 43px;
+        display: flex;
+    }
+
+    
+
+
+
+
+}
+
+
+    
+    @media (max-width: 1200px) {
+
+        .containerheader{
+            padding: 2rem; 
+        }
+        .navmainlogin {
+        
+            margin: "auto";
+        }
+
+        .buscar {
+            margin-left: 50px;
+            width: "auto";
+        }
+    /* .containerheader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+    }
+    
+    .menu {
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    .buscar {
+        margin-left: 50px;
+        width: 540px;
+    }
+    
+    .mainbuscar {
+        margin-left: 4rem;
+    }
+    
+    .navmainlogin {
+        
+        margin-left: 300px;
+    } */
+    }
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .containerheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .menu {
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  /* .buscar {
+    margin-left: 50px;
+    width: 300px;
+  } */
+  
+  /* .mainbuscar {
+    margin-left: 2rem;
+  } */
+  
+  /* .navmainlogin {
+    margin-left: 150px;
+  } */
+} 
+
+/* 
+@media (max-width: 767px) {
+  .containerheader {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .menu {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  
+  .buscar {
+    margin: 1rem 0;
+    width: 100%;
+  }
+  
+  .mainbuscar {
+    margin-left: 0;
+  } 
+  
+  .navmainlogin {
+    flex-basis: 50%;
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+  */

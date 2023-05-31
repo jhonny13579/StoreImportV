@@ -1,0 +1,21 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #df8f8f; /* Color de fondo personalizado */
+    padding: 10px; /* Espaciado interno */
+  }
+  
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .navbar li {
+    margin-bottom: 10px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #333; /* Color de texto personalizado */
+  }

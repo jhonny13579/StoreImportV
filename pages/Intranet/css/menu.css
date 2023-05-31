@@ -1,0 +1,243 @@
+.Sidebar {
+  width: 27.15vh;
+  height: 100vh;
+  position: fixed;
+  background-color: var(--secondary-fuchonet);
+  z-index: 2;
+}
+
+#SidebarList {
+  height: auto;
+  padding: 0;
+  width: 100%;
+  overflow-y: auto !important;
+  height: calc(100vh - 280px);
+}
+
+#SidebarList .row {
+  height: auto;
+  list-style-type: none;
+  padding: 15px 0px;
+  margin: 5% 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-fuchonet);
+  font-size: var(--font-size-tittle);
+}
+
+#SidebarList .row:hover {
+  cursor: pointer;
+  background-color: rgba(163, 163, 162, 0.2);
+  border-color: var(--white-color);
+  border-left-style: solid;
+  border-width: 5px;
+  text-decoration: none;
+
+  border-left: 1px solid #ffffff;
+  border-radius: 4px;
+}
+.active-menu {
+  //background-color: rgba(253, 186, 48, 0.2);
+  border-color: var(--white-color);
+  border-left-style: solid;
+  border-width: 5px;
+  text-decoration: none;
+  color: #ffffff;
+  border-left: 1px solid #ffffff;
+  border-radius: 4px;
+}
+#SidebarList #active {
+  background-color: rgba(253, 186, 48, 0.2);
+  border-color: var(--white-color);
+  border-left-style: solid;
+  border-width: 5px;
+  text-decoration: none;
+}
+.row #icon {
+  flex: 30%;
+  display: grid;
+  place-items: center;
+  color: #7f8f84;
+}
+
+.row #tittle {
+  flex: 70%;
+  color: #7f8f84;
+  font-size: 16px;
+}
+
+.active-menu #tittle {
+  flex: 70%;
+  color: var(--white-color);
+  font-size: 16px;
+}
+
+.active-menu #icon {
+  flex: 30%;
+  display: grid;
+  place-items: center;
+  color: var(--white-color);
+}
+
+.row #tittle:hover {
+  text-decoration: none;
+}
+
+.menuTextLogo {
+  width: 201px;
+  height: 40px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 108.5%;
+  /* or 33px */
+
+  display: flex;
+  align-items: center;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  color: white;
+  margin: 29px;
+}
+
+.logo {
+  flex: 80%;
+  padding: 2em 0em 5em 2.5em;
+  position: relative;
+}
+.logoFooterNav {
+  padding: 0em 0em 1em 2em;
+  position: relative;
+  width: 90%;
+}
+.menu-list {
+  display: none;
+  float: right;
+  margin-right: 3%;
+  margin-top: 2.5em;
+}
+.checkbtn #menu-icon {
+  font-size: 1em;
+  color: var(--primary-fuchonet);
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .SidebarList {
+    display: none;
+  }
+  .Sidebar {
+    display: block;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    background-color: var(--secondary-fuchonet);
+    z-index: 2;
+  }
+  .SidebarListHide {
+    /* margin-top: -600px; */
+    visibility: hidden;
+    position: relative;
+    display: block;
+    height: auto;
+    background: var(--secondary-fuchonet);
+    /* transition: all .5s; */
+  }
+  .SidebarListHideIcon {
+    position: absolute;
+    float: right;
+    text-align: right;
+    right: 1px;
+    visibility: hidden;
+    display: none;
+    transition: all 0.5s;
+  }
+  .menu-list {
+    display: block;
+    float: right;
+    margin-right: 1.2%;
+    margin-top: 2.5em;
+  }
+  #SidebarList {
+    visibility: visible;
+    margin-top: -50px;
+    /* margin-top: -50px; */
+  }
+
+  #SidebarList .row:hover {
+    cursor: pointer;
+    background-color: rgba(241, 238, 230, 0.2);
+    border-color: #fdba30;
+    border-left-style: solid;
+    border-width: 5px;
+    text-decoration: none;
+
+    border-left: 1px solid #ffffff;
+    border-radius: 4px;
+  }
+}
+@media (max-width: 767) {
+  .Sidebar {
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    background-color: var(--secondary-fuchonet);
+    z-index: 1;
+  }
+  .SidebarList {
+    display: none;
+  }
+  .menu-list {
+    display: block;
+    float: right;
+    margin-right: 3%;
+    margin-top: 2.5em;
+  }
+  .Active-banner {
+    position: absolute !important;
+    bottom: 0;
+    width: 100% !important;
+    padding: 1%;
+    line-height: 1.8rem;
+    z-index: 1030;
+    background-color: #ffffffd4 !important;
+    margin: 2%;
+  }
+}
+@media (min-width: 425px) and (max-width: 767px) {
+  .menu-list {
+    margin-right: 3%;
+  }
+}
+@media (min-width: 220px) and (max-width: 424px) {
+  .menu-list {
+    display: block;
+    float: right;
+    margin-right: 4%;
+    margin-top: 2.5em;
+  }
+  .logo {
+    padding: 2em 0em 5em 2.5em;
+    width: 180px;
+  }
+  .logoFooterNav {
+    padding: 2em 0em 5em 2.5em;
+    width: 180px;
+  }
+}
+
+.submenu-visible li a {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
