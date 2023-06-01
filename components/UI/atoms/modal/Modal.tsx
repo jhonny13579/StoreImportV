@@ -1,11 +1,11 @@
 import classNames from 'classnames'
 import type { ReactNode } from 'react'
-// import styles from './index.module.css'
-
+import styles from './index.module.scss'
+import { extractClass } from "../../../../helpers/helpers";
 import Button from 'react-bootstrap/Button'
 import Modal from 'react-bootstrap/Modal'
 
-// const style: { [key: string]: string } | any = styles
+ const style: { [key: string]: string } | any = styles
 
 export interface Props {
   classname?: string
@@ -17,6 +17,7 @@ export interface Props {
   onclickguardar?: any
   titulo?: string
   size?: string
+  active: boolean;
 }
 
 const Modals = ({
@@ -29,14 +30,13 @@ const Modals = ({
   onclickguardar,
   titulo,
   size,
+
+  active,
 }: Props) => {
-  const classprops: string = classNames(
-    // style[classname] ? style[classname] :
-    classname
-  )
+  const classprops: string = classNames(extractClass(styles, classname));
   return (
     <Modal
-      className={classprops}
+    className={active ? classprops : classname}
       {...props}
       show={show}
       onHide={onHide}

@@ -11,8 +11,10 @@ export const apiPath = {
 
   marcas: {
     PATH_ListarByMarca: "TPMaestraSelect/ListarMarca",
-
-
+    PATH_SaveMarcas: "TPMaestraSelect/RegistrarMarca",
+    PATH_UpdateMarca: "TPMaestraSelect/ModificarMarca",
+      PATH_DisabledMarca: "TPMaestraSelect/ModificarMarca",
+  
   },
   productos: {
   

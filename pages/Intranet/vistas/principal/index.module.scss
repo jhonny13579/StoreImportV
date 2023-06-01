@@ -1,0 +1,91 @@
+.tabla {
+  font-size: 0.8rem;
+  text-align: center;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th,
+    td {
+      padding: 8px;
+      border: 1px solid #ccc;
+    }
+
+    th {
+      background-color: rgb(241, 190, 190);
+    }
+
+    tbody tr:last-child td {
+      border-width: 0;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.button {
+  padding: 6px 12px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+
+.modal {
+  // Estilos para el contenedor del modal
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  &.custom-modal {
+    // Estilos adicionales cuando la clase "custom-modal" está activa
+    // ...
+  }
+
+  .modal-header {
+    // Estilos para el encabezado del modal
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+
+    .modal-title {
+      // Estilos para el título del modal
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
+  .modal-body {
+    // Estilos para el cuerpo del modal
+    padding: 10px;
+  }
+
+  .modal-footer {
+    // Estilos para el pie del modal
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .btn {
+      // Estilos para los botones del modal
+      margin-left: 10px;
+
+      &.secondary {
+        // Estilos adicionales para el botón secundario
+        background-color: #ccc;
+        color: #fff;
+      }
+    }
+  }
+}

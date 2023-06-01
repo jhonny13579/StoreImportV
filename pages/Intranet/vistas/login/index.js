@@ -130,19 +130,9 @@ const Login = () => {
               value="Ingresar"
               onClick={handleClickIngresar}
             >
-           
             </ButtonA>
-            {/* <input
-              type="button"
-              className={`${styles.button} btnSubmit`}
-              value="Ingresar"
-              onClick={handleClickIngresar}
-            /> */}
+ 
           </div>
-
-          {/* <div className={styles.tabla}>
-            <TableDinamic columns={COLUMNS} listData={dataDummy} />
-          </div> */}
         </form>
       </div>
     </div>

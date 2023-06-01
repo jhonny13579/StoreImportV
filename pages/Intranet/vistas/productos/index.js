@@ -15,7 +15,7 @@ const TableDinamic = dynamic(
  const Productos = () => {
 
     const links = [
-        { text: 'Inicio', url: '/Intranet/vistas/principal' },
+        { text: 'Marcas', url: '/Intranet/vistas/principal' },
         { text: 'Productos', url: '/Intranet/vistas/productos' },
         { text: 'Categorias', url: '/Intranet/vistas/categorias' },
         { text: 'Ir al Login', url: '/Intranet/vistas/login' },

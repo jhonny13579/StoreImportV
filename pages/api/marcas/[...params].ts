@@ -14,24 +14,13 @@ const handler = async (req: NextApiRequest, res: NextApiResponse<Data>) => {
   switch (params[0]) {
     case 'listmarc': {
       try { 
-        const cacheKey = params.join('-'); // Genera una clave única basada en los parámetros de la solicitud
-        const cachedResult = cache.get(cacheKey);
-
-        if (cachedResult) {
-          // Si el resultado está en la caché, lo devuelve directament  e
-          return res.status(200).json(cachedResult);
-        }
-
-        console.log("cachedResult",cachedResult)
+       
         const URL = apiPath.marcas.PATH_ListarByMarca
         const apiCall: AxiosInstance = axiosCreate(Api)        
         const { data } = await apiCall(URL)
         const result = data.Data.lresponse
-
-        cache.set(cacheKey, result, 5 * 60);
-
         res.status(200).json(result)
-        // console.log("resultadoooo",result)
+      
       } catch (error) {
         console.log(error);
         res.status(500).json({ error: 'Error en la solicitud' });
@@ -39,6 +28,54 @@ const handler = async (req: NextApiRequest, res: NextApiResponse<Data>) => {
       break
     }
     
+    case 'savemarca': {
+      try {
+        const item = req.body
+        const URL = apiPath.marcas.PATH_SaveMarcas
+        const apiCall: AxiosInstance = axiosCreate(Api)
+        const {data} = await apiCall.post(URL, item)
+        const result = data.Data.lresponse
+        console.log("xxxxxx",result)
+        res.status(200).json(result)
+      
+      } catch (error) {
+        console.log(error)
+        res.status(500).json({ error: 'Internal Server Error' });
+      }
+      break
+    }
+    case 'updatemarca': {
+      try {
+        const item = req.body
+        const URL = apiPath.marcas.PATH_UpdateMarca
+        const apiCall: AxiosInstance = axiosCreate(Api)
+        const {data} = await apiCall.post(URL, item)
+        const result = data.Data.lresponse
+     
+        res.status(200).json(result)
+      
+      } catch (error) {
+        console.log(error)
+        res.status(500).json({ error: 'Internal Server Error' });
+      }
+      break
+    }
+    case 'disabledemarca': {
+      try {
+        const item = req.body
+        const URL = apiPath.marcas.PATH_DisabledMarca
+        const apiCall: AxiosInstance = axiosCreate(Api)
+        const {data} = await apiCall.post(URL, item)
+        const result = data.Data.lresponse
+     
+        res.status(200).json(result)
+      
+      } catch (error) {
+        console.log(error)
+        res.status(500).json({ error: 'Internal Server Error' });
+      }
+      break
+    }
     default:
       res.status(404).json({ error: 'Ruta no encontrada' });
       break;
